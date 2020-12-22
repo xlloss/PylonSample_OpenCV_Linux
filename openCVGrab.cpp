@@ -111,7 +111,7 @@ int main(int argc, char* argv[])
 				openCvImage= cv::Mat(ptrGrabResult->GetHeight(), ptrGrabResult->GetWidth(), CV_8UC3, (uint8_t *) pylonImage.GetBuffer());
 
 				// Create a display window
-				namedWindow(name_window, CV_WINDOW_NORMAL);//AUTOSIZE //FREERATIO
+				namedWindow(name_window, WINDOW_NORMAL);//AUTOSIZE //FREERATIO
 				// Display the current image with opencv
 				imshow( "OpenCV Display Window", openCvImage);
 				// Define a timeout for customer's input in ms.
